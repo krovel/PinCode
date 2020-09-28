@@ -6,7 +6,7 @@ import java.util.regex.*;
 public class PinCode {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Pattern p = Pattern.compile("^(!([a-zA-Z][^W]))*[0-9]{6}(!([a-zA-Z][^W]))*$");
+		Pattern p = Pattern.compile("^(!([a-zA-Z][^W]))*[0-9]{3}\s*{0,1}[0-9]{3}(!([a-zA-Z][^W]))*$");
 		while (true) {
 			System.out.println("Enter the PIN Code: ");
 			String pin = sc.nextLine();
@@ -19,5 +19,5 @@ public class PinCode {
 			}
 		}sc.close();
 	}
-
+	
 }
