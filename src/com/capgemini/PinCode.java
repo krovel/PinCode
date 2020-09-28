@@ -6,7 +6,7 @@ import java.util.regex.*;
 public class PinCode {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Pattern p = Pattern.compile("[0-9]{6}");
+		Pattern p = Pattern.compile("^([1-9])(\\S){5}$");
 		while (true) {
 			System.out.println("Enter the PIN Code: ");
 			String pin = sc.nextLine();
